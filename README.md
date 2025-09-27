@@ -48,7 +48,7 @@ cd Outback_Early_Warning
 python -m venv .venv
 .venv\Scripts\Activate.ps1   # on Windows
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run Home.py
 ```
 ---
 

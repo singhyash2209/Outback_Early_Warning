@@ -1,5 +1,5 @@
 import streamlit as st
-st.header("🧭 ArcGIS View (Silver)")
+st.header("🧭 ArcGIS View")
 st.write("When ready, this page embeds the ArcGIS Online Web Map or Dashboard.")
 embed_url = st.text_input("Embed URL (paste from ArcGIS Online)", value="")
 if embed_url:

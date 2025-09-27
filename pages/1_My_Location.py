@@ -6,11 +6,13 @@ from src.ui_text import actions_for_afdrs, explain_badges
 
 st.header("📍 My Location")
 
+# --- Input ---
 q = st.text_input("Enter town / postcode (NSW)", placeholder="e.g., Bathurst")
 
 auto_latlon = None
 auto_district = None
 
+# --- Geocode + suggest district ---
 if st.button("Check location"):
     if q.strip():
         geo = geocode_nominatim(q.strip())
@@ -22,15 +24,23 @@ if st.button("Check location"):
         else:
             st.error("Could not geocode your query. Try a different town/postcode in NSW.")
 
-# District chooser (auto-detected preselected if available)
+# --- AFDRS district chooser (with auto-detect preselection if available) ---
 st.subheader("AFDRS District")
 districts = ["(Select district)"] + nsw_district_names()
 default_idx = 0
 if auto_district and auto_district in nsw_district_names():
     default_idx = districts.index(auto_district) if auto_district in districts else 0
 
-chosen = st.selectbox("Choose your AFDRS district (auto-detect is rough; override if needed)", districts, index=default_idx)
+chosen = st.selectbox(
+    "Choose your AFDRS district (auto-detection is approximate; override if needed)",
+    districts,
+    index=default_idx
+)
 
+# 👇 tiny, human hint (as requested)
+st.caption("Auto-detection is approximate. If it looks off, choose your district manually.")
+
+# --- Show today's AFDRS rating + actions ---
 if chosen != "(Select district)":
     rating = get_today_rating_for_district(chosen)
     if rating.level and rating.level != "Unknown":
@@ -39,7 +49,7 @@ if chosen != "(Select district)":
     else:
         st.info(f"AFDRS rating for **{chosen}** is not available right now.")
 
-# Optional: quick risk model demo (uses your current transparent mock)
+# --- Risk prototype (will be upgraded in Phase 5) ---
 st.subheader("Local Risk (prototype)")
 if q.strip():
     risk = compute_risk_for_query(q.strip())
