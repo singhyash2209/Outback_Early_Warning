@@ -1,0 +1,15 @@
+streamlit
+pandas
+numpy
+requests
+pydeck
+geopandas
+shapely
+pyproj
+pyogrio
+beautifulsoup4
+lxml
+cachetools
+tenacity
+pydantic
+folium
