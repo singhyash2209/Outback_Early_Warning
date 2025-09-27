@@ -1,18 +1,18 @@
-# Outback_Early_Warning 🔥🌊
+# Outback_Early_Warning 
 
 **AI in the Outback Hackathon Submission (2025)**  
 A collaborative project by **Yash Singh** and **Trusha Sonawane**
 
 ---
 
-## 🚨 Overview
+## Overview
 Outback_Early_Warning is a Streamlit-based dashboard that provides rural and regional Australians with **early-warning insights** into bushfires, floods, and severe weather events.  
 
 By combining **official government feeds** (NSW Rural Fire Service, Bureau of Meteorology, AFDRS) with a transparent **AI-driven risk scoring system** and **ArcGIS geospatial integration**, the app empowers communities to prepare and respond effectively.
 
 ---
 
-## ✨ Features
+## Features
 - **Unified Map Dashboard**: Live bushfire incidents (NSW RFS), BOM warnings, and NASA FIRMS hotspots.  
 - **AFDRS Ratings**: Today’s Fire Danger Rating with actionable, plain-English guidance.  
 - **Local Risk Score**: Personalized scoring system with explainable tags.  
@@ -22,7 +22,7 @@ By combining **official government feeds** (NSW Rural Fire Service, Bureau of Me
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend**: Streamlit, PyDeck (map layers)  
 - **Backend**: Python, GeoPandas, Shapely, Requests  
 - **Geospatial**: ArcGIS Online, NASA FIRMS  
@@ -31,7 +31,7 @@ By combining **official government feeds** (NSW Rural Fire Service, Bureau of Me
 
 ---
 
-## 👥 Team
+## Team
 - **Yash Singh** — Co-engineered backend data fetchers, geospatial risk model, and ArcGIS integration; co-designed Streamlit UI and offline resources.  
 - **Trusha Sonawane** — Co-engineered data ingestion and scoring workflows; co-designed UI/UX, visualization elements, and authored offline safety pack.  
 
@@ -39,7 +39,7 @@ By combining **official government feeds** (NSW Rural Fire Service, Bureau of Me
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 Clone the repository and set up the environment:
 
 ```bash
@@ -52,13 +52,13 @@ streamlit run app.py
 ```
 ---
 
-## 📸 Demo
+## Demo
 
 
 
 ---
 
-## 📜 Disclaimer
+## Disclaimer
 
 - This is a prototype built for the AI in the Outback Hackathon.
 - It aggregates official data but is not an official warning service.
