@@ -1,8 +1,11 @@
 import streamlit as st
+
 from src.location import geocode_nominatim, detect_district, nsw_district_names
 from src.afdrs import get_today_rating_for_district
 from src.risk_model import compute_risk_for_query
 from src.ui_text import actions_for_afdrs, explain_badges
+from src.sidebar import render_sidebar
+render_sidebar()
 
 st.header("📍 My Location")
 
@@ -37,23 +40,24 @@ chosen = st.selectbox(
     index=default_idx
 )
 
-# 👇 tiny, human hint (as requested)
 st.caption("Auto-detection is approximate. If it looks off, choose your district manually.")
 
 # --- Show today's AFDRS rating + actions ---
-if chosen != "(Select district)":
-    rating = get_today_rating_for_district(chosen)
+selected_district = None if chosen == "(Select district)" else chosen
+if selected_district:
+    rating = get_today_rating_for_district(selected_district)
     if rating.level and rating.level != "Unknown":
-        st.success(f"AFDRS today in **{chosen}**: **{rating.level}**")
+        st.success(f"AFDRS today in **{selected_district}**: **{rating.level}**")
         st.markdown(actions_for_afdrs(rating.level))
     else:
-        st.info(f"AFDRS rating for **{chosen}** is not available right now.")
+        st.info(f"AFDRS rating for **{selected_district}** is not available right now.")
 
-# --- Risk prototype (will be upgraded in Phase 5) ---
+# --- Risk prototype (uses AFDRS weighting when district is chosen) ---
 st.subheader("Local Risk (prototype)")
 if q.strip():
-    risk = compute_risk_for_query(q.strip())
-    st.metric("Risk score (0–1)", f"{risk.score:.2f}")
-    st.write(explain_badges(risk))
+    res = compute_risk_for_query(q.strip(), district=selected_district)
+    st.metric("Risk score (0–1)", f"{res.score:.2f}")
+    for t in res.tags:
+        st.write("•", t)
 else:
     st.caption("Enter a town/postcode above to see a risk score prototype.")

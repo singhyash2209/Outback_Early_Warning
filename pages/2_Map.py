@@ -1,11 +1,14 @@
-import streamlit as st
+import streamlit as st 
 import pydeck as pdk
 import json
+import datetime as dt
 
 from src.fetch_rfs_nsw import get_rfs_points
 from src.fetch_bom import get_bom_polygons
-from src.fetch_firms import get_firms_points  # optional (only used if toggled)
+from src.fetch_firms import get_firms_points
 from src.geo_utils import to_pydeck_layer_polygons
+from src.sidebar import render_sidebar
+render_sidebar()
 
 st.header("🗺️ Map")
 
@@ -21,7 +24,6 @@ with col2:
     show_bom = st.checkbox("BOM warnings", True)
 
 with col3:
-    # Only allow FIRMS if not in low-bandwidth mode
     show_firms = False if st.session_state.get("low_bw") else st.checkbox("NASA FIRMS hotspots", False)
 
 with col4:
@@ -38,7 +40,6 @@ rfs_points = get_rfs_points()
 bom_polys = get_bom_polygons()
 firms_points = get_firms_points() if show_firms else None
 
-# Status line (quick data counts)
 st.caption(f"Incidents: **{len(rfs_points)}** • BOM polygons: **{len(bom_polys)}**")
 
 # ───────────────────────────────────────────────────────────────────────────────
@@ -46,7 +47,6 @@ st.caption(f"Incidents: **{len(rfs_points)}** • BOM polygons: **{len(bom_polys
 # ───────────────────────────────────────────────────────────────────────────────
 layers = []
 
-# Color incidents by status (red = Out of Control, orange = Being Controlled, green = other)
 def _apply_point_styles(records, radius_value):
     styled = []
     for r in records:
@@ -57,11 +57,13 @@ def _apply_point_styles(records, radius_value):
             r["color"] = [255, 165, 0]       # orange
         else:
             r["color"] = [34, 139, 34]       # green
-        r["radius_m"] = radius_value        # set from slider
+        r["radius_m"] = radius_value
+        # Normalize status label
+        r["status"] = r.get("status") or "No official status published"
         styled.append(r)
     return styled
 
-# NSW RFS incident points (with slider-defined radius)
+# NSW RFS incidents
 if show_rfs and rfs_points:
     styled_points = _apply_point_styles(list(rfs_points), radius_m)
     layers.append(
@@ -78,11 +80,11 @@ if show_rfs and rfs_points:
         )
     )
 
-# BOM warning polygons
+# BOM polygons
 if show_bom and bom_polys:
     layers += to_pydeck_layer_polygons(bom_polys, name="BOM Warnings")
 
-# FIRMS (optional heatmap)
+# FIRMS hotspots
 if show_firms and firms_points:
     layers.append(
         pdk.Layer(
@@ -96,7 +98,7 @@ if show_firms and firms_points:
     )
 
 # ───────────────────────────────────────────────────────────────────────────────
-# Map render (Carto basemap, no token needed) + rich tooltip incl. Updated time
+# Map render
 # ───────────────────────────────────────────────────────────────────────────────
 initial_view = pdk.ViewState(latitude=-32.5, longitude=147.0, zoom=5)
 
@@ -112,31 +114,46 @@ deck = pdk.Deck(
 )
 
 st.pydeck_chart(deck)
+st.caption("Color key: red = Out of control • orange = Being Controlled • green = Other/Advice")
 
 # ───────────────────────────────────────────────────────────────────────────────
-# Export incidents (GeoJSON-like) — handy for ArcGIS Online
+# Export incidents (GeoJSON-like)
 # ───────────────────────────────────────────────────────────────────────────────
 if rfs_points:
-    geojson_like = {
-        "type": "FeatureCollection",
-        "features": [
-            {
-                "type": "Feature",
-                "geometry": {"type": "Point", "coordinates": [p["lon"], p["lat"]]},
-                "properties": {k: v for k, v in p.items() if k not in ("lat", "lon")}
+    features = []
+    for p in rfs_points:
+        lat, lon = p.get("lat"), p.get("lon")
+        if lat is None or lon is None:
+            continue
+        features.append({
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [lon, lat]},
+            "properties": {
+                "title": p.get("title"),
+                "status": p.get("status") or "No official status published",
+                "updated": p.get("updated") or "",
+                "url": p.get("url"),
+                "source": "NSW RFS",
+                "color": p.get("color"),
+                "radius": p.get("radius_m", radius_m)
             }
-            for p in rfs_points
-        ]
+        })
+
+    payload = {
+        "type": "FeatureCollection",
+        "generated_at_utc": dt.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+        "features": features
     }
+
     st.download_button(
         "⬇️ Download incidents (GeoJSON-like)",
-        data=json.dumps(geojson_like),
+        data=json.dumps(payload, indent=2),
         file_name="nsw_rfs_incidents.json",
         mime="application/json"
     )
 
 # ───────────────────────────────────────────────────────────────────────────────
-# Empty state (clear, human)
+# Empty state
 # ───────────────────────────────────────────────────────────────────────────────
 if show_rfs and not rfs_points and show_bom and not bom_polys:
     st.info("No current major incidents reported by NSW RFS and no active BOM warnings for NSW at this moment.")

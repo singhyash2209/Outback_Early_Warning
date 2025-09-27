@@ -20,15 +20,27 @@ def get_rfs_points():
 
     points = []
     for item in data.get("features", []):
-        props = item.get("properties", {})
-        geom = item.get("geometry", {})
+        props = item.get("properties", {}) or {}
+        geom = item.get("geometry", {}) or {}
         coords = geom.get("coordinates", [None, None])
+
+        # --- smarter status derivation ---
+        status = props.get("status") or props.get("statusText") or ""
+        if not status:
+            t = (props.get("type") or "").lower()
+            if "burn" in t:
+                status = "Planned burn"
+            elif props.get("size"):
+                status = f"Ongoing ({props.get('size')} ha)"
+            else:
+                status = "No official status published"
+
         if coords and len(coords) == 2:
             points.append({
                 "lat": coords[1],
                 "lon": coords[0],
                 "title": props.get("title", "Unknown"),
-                "status": props.get("status", "Unknown"),
+                "status": status,
                 "updated": props.get("updated", ""),
                 "url": props.get("link", ""),
                 "source": "NSW RFS"

@@ -3,6 +3,8 @@ from pathlib import Path
 import json
 
 from src.offline_pack import generate_pdf_and_csv
+from src.sidebar import render_sidebar
+render_sidebar()
 
 st.header("📦 Offline Safety Pack")
 
