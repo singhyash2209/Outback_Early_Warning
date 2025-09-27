@@ -1,6 +1,55 @@
-# NSW RFS incidents fetcher (GeoJSON/CAP) — real impl in Phase 2
+import requests
+from cachetools import TTLCache
+from src.utils_cache import update_cache_time
+
+# cache results for 15 minutes
+_cache = TTLCache(maxsize=1, ttl=900)
+
 def get_rfs_points():
-    # return list[dict] with fields like {lat, lon, title, status, source}
-    return []
+    """Fetch NSW RFS incidents as point features for mapping."""
+    if "points" in _cache:
+        return _cache["points"]
+
+    url = "https://www.rfs.nsw.gov.au/feeds/majorIncidents.json"
+    try:
+        resp = requests.get(url, timeout=10)
+        data = resp.json()
+    except Exception as e:
+        print("Error fetching RFS incidents:", e)
+        return []
+
+    points = []
+    for item in data.get("features", []):
+        props = item.get("properties", {})
+        geom = item.get("geometry", {})
+        coords = geom.get("coordinates", [None, None])
+        if coords and len(coords) == 2:
+            points.append({
+                "lat": coords[1],
+                "lon": coords[0],
+                "title": props.get("title", "Unknown"),
+                "status": props.get("status", "Unknown"),
+                "updated": props.get("updated", ""),
+                "url": props.get("link", ""),
+                "source": "NSW RFS"
+            })
+
+    # 🟢 Tell cache system that RFS feed is now updated
+    update_cache_time("NSW RFS incidents")
+
+    _cache["points"] = points
+    return points
+
+
 def get_rfs_feed():
-    return []
+    """Simplified feed list for sidebar/feed page."""
+    points = get_rfs_points()
+    feed = []
+    for p in points:
+        feed.append({
+            "time": p["updated"],
+            "title": p["title"],
+            "summary": f"Status: {p['status']}",
+            "url": p["url"]
+        })
+    return sorted(feed, key=lambda x: x["time"], reverse=True)
