@@ -1,102 +1,164 @@
-# Outback_Early_Warning 🔥🌊
+# AI in the Outback — Early Warning (NSW) 🔥
 
-**AI in the Outback Hackathon Submission (2025)**  
-A collaborative project by **Yash Singh** and **Trusha Sonawane**
+A one-stop, NSW-first dashboard that unifies **official bushfire, weather, and AFDRS feeds** into a simple, fast UI — with **offline-ready safety tools** and **ArcGIS export**.
+
+**Demo video:** [Watch on Vimeo](https://vimeo.com/1122588844?share=copy)  
+**Live app:** [outback-early-warning.streamlit.app](https://outback-early-warning.streamlit.app)  
+**Repository:** [GitHub](https://github.com/singhyash2209/Outback_Early_Warning)
+
+> ⚠️ **Disclaimer**: This is a prototype that aggregates **official sources** (NSW Rural Fire Service, Bureau of Meteorology, AFDRS). Always follow directions from official channels. **This is NOT an official warning service.**
 
 ---
 
-## Overview
-Outback_Early_Warning is a **Streamlit-based early-warning dashboard** designed for rural and regional Australians.  
-It combines **official data feeds** (NSW Rural Fire Service, Bureau of Meteorology, AFDRS) with an **AI-driven local risk score** and **ArcGIS interoperability** to help communities **prepare, respond, and stay safe** during bushfires, floods, and severe weather.
+## ✨ Features
+
+- **Home**: Data freshness badges for NSW RFS, BOM warnings, and AFDRS.
+- **My Location**: Enter a town/postcode → auto-detect AFDRS district → see today’s AFDRS rating (High, Extreme, Catastrophic, etc.) and a **local risk score (0–1)** with plain-English safety actions.
+- **Map**: Interactive map of NSW incidents:
+  - NSW RFS incidents (color-coded)
+  - BOM warning polygons
+  - NASA FIRMS hotspots (toggle on/off)
+  - Legend + export as **GeoJSON-like**
+- **Feed**: Unified alerts feed with filters (Bushfire, Flood, Severe Weather). Expand items for details and official links.
+- **ArcGIS View**: Export incidents as GeoJSON and embed in ArcGIS Online. (Gold feature ✨)
+- **Offline Safety Pack**: Quick contacts + printable checklist (low-connectivity mode).
+
+**Color key:**  
+🔴 Out of control • 🟠 Being controlled • 🔵 Planned burn • 🟢 Advice/other • ⚪ Unknown
 
 ---
 
-## ✨ Key Features
-- **📍 My Location**: Enter any NSW town/postcode → get a **personalized risk score** with **transparent “why” tags** and today’s **AFDRS Fire Danger Rating** (plus plain-English safety actions).
-- **🗺️ Map**: Unified live layers (NSW RFS incidents, BOM warnings, optional NASA FIRMS hotspots), hover tooltips with **status + updated time**, **layer toggles**, and adjustable **marker size**. Includes a **color legend** (red/orange/green).
-- **📰 Unified Feed**: Sorted and filterable feed across RFS + BOM, with normalized status and official links.
-- **📦 Offline Safety Pack**: One-click PDF + CSV download of critical contacts and checklists for low-connectivity areas.
-- **🧭 ArcGIS Gold Integration**: Export incidents as GeoJSON with UTC timestamp → upload to ArcGIS Online → embed a **live Web Map** or **Hosted Feature Layer / GeoJSON URL** directly in-app using the ArcGIS JavaScript API.
-- **⚡ Optimized for rural connectivity**: Low-bandwidth toggle, caching, and refresh controls.
+## Screenshots
+
+| Home | My Location (Catastrophic) | My Location (High) |
+|------|-----------------------------|---------------------|
+| ![Home](assets/home_page.png) | ![Catastrophic](assets/my_location_catastrophic_top.png) | ![High](assets/my_location_high_top.png) |
+
+| Map (top) | Map (bottom + legend) |
+|-----------|------------------------|
+| ![Map top](assets/map_top.png) | ![Map bottom](assets/map_bottom.png) |
+
+| Feed (filter) | Feed (expanded) |
+|---------------|-----------------|
+| ![Feed filter](assets/feed_dropdown.png) | ![Feed expanded](assets/feed_expanded_item.png) |
+
+| ArcGIS export | ArcGIS embed | Offline Safety Pack |
+|---------------|--------------|----------------------|
+| ![ArcGIS top](assets/ArcGIS_top.png) | ![ArcGIS bottom](assets/ArcGIS_bottom.png) | ![Offline pack](assets/offline_safety_pack.png) |
+
+---
+
+## Quick Start (Local)
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/singhyash2209/Outback_Early_Warning
+cd Outback_Early_Warning
+
+# 2. Create and activate a virtual environment (optional but recommended)
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the app
+streamlit run Home.py
+```
+Open http://localhost:8501 in your browser.
+
+---
+
+## How to Use
+
+- Home: Check if data feeds are fresh (RFS, BOM, AFDRS).
+- My Location: Type a town (e.g., Eden, Cooma, Wagga Wagga) → confirm AFDRS district → view today’s rating + risk score.
+- Map: Toggle layers (RFS, BOM, FIRMS). Hover markers for tooltips. Export GeoJSON for GIS.
+- Feed: Use dropdown filter → expand any item → click Official link.
+- ArcGIS View: Download nsw_rfs_incidents.json, upload to ArcGIS Online, style + embed.
+-Offline Safety Pack: Copy key contacts, save a vCard, or print the pack.
 
 ---
 
 ## Tech Stack
-- **Frontend**: Streamlit, PyDeck  
-- **Backend**: Python, Requests, CacheTools  
-- **Geospatial**: ArcGIS Online (Gold), GeoJSON export, NASA FIRMS  
-- **Data Sources**: NSW RFS, Bureau of Meteorology, AFDRS  
-- **Collaboration**: GitHub, VS Code, pair programming  
+
+- UI: Streamlit (Python)
+- Mapping: Pydeck / deck.gl (Carto basemap)
+- Data Sources:
+  - NSW RFS incidents feed
+  - Bureau of Meteorology (BOM CAP XML)
+  - AFDRS daily ratings
+  - NASA FIRMS hotspots
+- Export: GeoJSON-like with timestamp + null-coordinate filtering
+- Caching: cachetools.TTLCache for fast refresh
+
+---
+
+## Project Structure
+.
+
+├── Home.py
+
+├── pages/
+
+│   ├── 1_My_Location.py
+
+│   ├── 2_Map.py
+
+│   ├── 3_Feed.py
+
+│   ├── 4_ArcGIS_View.py
+
+│   └── 5_Offline_Pack.py
+
+├── src/
+
+│   ├── fetch_rfs_nsw.py
+
+│   ├── fetch_bom.py
+
+│   ├── afdrs.py
+
+│   ├── fetch_firms.py
+
+│   ├── geo_utils.py
+
+│   ├── risk_model.py
+
+│   ├── utils_cache.py
+
+│   └── sidebar.py
+
+├── assets/               # screenshots
+
+├── requirements.txt
+
+└── .streamlit/config.toml
 
 ---
 
 ## Team
-- **Yash Singh** — Data pipelines, geospatial risk model, ArcGIS integration, co-designed Streamlit UI and offline resources.  
-- **Trusha Sonawane** — Data ingestion, feed normalization, UI/UX design, authored Offline Pack, co-led demo prep and ArcGIS workflows.  
 
-> We worked together across *all aspects* of the project — backend + frontend + UX — ensuring true end-to-end collaboration.
+- Yash Singh - Core Streamlit app, data integrations (RFS/BOM/AFDRS), map, feed, export, repo.
+- Trusha Sonawane - AFDRS risk modeling & UI copy, Offline Safety Pack, UX polish, documentation/demo.
 
 ---
 
-## Getting Started
-Clone and run locally:
+## License
 
-```bash
-git clone https://github.com/singhyash2209/Outback_Early_Warning.git
-cd Outback_Early_Warning
-python -m venv .venv
-.venv\Scripts\Activate.ps1   # on Windows
-pip install -r requirements.txt
-streamlit run Home.py
-```
-## Screenshots / Demo
+This project is licensed under the MIT License — see the LICENSE
+ file for details.
 
-### 🏠 Home Page
-![Home Page](assets/home_page.png)
+---
 
-### 📍 My Location (Catastrophic Example)
-![My Location Catastrophic](assets/my_location_catastropic_top.png)
+## What’s Next
 
-### 📍 My Location (High Example)
-![My Location High](assets/my_location_high_top.png)
+- Deploy to additional platforms (e.g., Hugging Face Spaces).
+- Add SMS/email/push alerts.
+- Extend to all Australian states (not just NSW).
+- Pilot with local councils and emergency services.
 
-### 🗺️ Map
-![Map Top](assets/map_top.png)
-![Map Bottom](assets/map_bottom.png)
-
-### 📰 Unified Feed
-![Feed Dropdown](assets/feed_dropdown.png)
-![Feed Expanded](assets/feed_expanded_item.png)
-
-### 🧭 ArcGIS View
-![ArcGIS Top](assets/ArcGIS_top.png)
-![ArcGIS Bottom](assets/ArcGIS_bottom.png)
-
-### 📦 Offline Pack
-![Offline Safety Pack](assets/offline_safety_pack.png)
-
-## Demo Mode
-
-To ensure a smooth demo (especially during judging), the app can run in **demo mode**.  
-This mode uses a curated dataset that guarantees coverage of:
-
-- AFDRS ratings: Catastrophic, High, Moderate
-- Multiple active incidents across NSW
-- Populated feed items (Bushfire, Flood, Severe Weather)
-
-### Why demo mode?
-Live feeds (RFS, BOM, AFDRS) are sometimes empty or unavailable. Demo mode makes sure all features are visible in action, while production mode connects directly to official data sources.
-
-### How to run in demo mode
-1. Download the demo file from `/data/demo_nsw_rfs_incidents.json` (included in repo).  
-2. Start the app with:
-
-```bash
-streamlit run Home.py -- --demo
-```
-
-## Disclaimer
-
-- This is a prototype built for the AI in the Outback Hackathon.
-- It aggregates official data but is not an official warning service.
-- Always follow directions from the NSW Rural Fire Service and Bureau of Meteorology.
+---
