@@ -75,6 +75,26 @@ streamlit run Home.py
 ### 📦 Offline Pack
 ![Offline Safety Pack](assets/offline_safety_pack.png)
 
+## Demo Mode
+
+To ensure a smooth demo (especially during judging), the app can run in **demo mode**.  
+This mode uses a curated dataset that guarantees coverage of:
+
+- AFDRS ratings: Catastrophic, High, Moderate
+- Multiple active incidents across NSW
+- Populated feed items (Bushfire, Flood, Severe Weather)
+
+### Why demo mode?
+Live feeds (RFS, BOM, AFDRS) are sometimes empty or unavailable. Demo mode makes sure all features are visible in action, while production mode connects directly to official data sources.
+
+### How to run in demo mode
+1. Download the demo file from `/data/demo_nsw_rfs_incidents.json` (included in repo).  
+2. Start the app with:
+
+```bash
+streamlit run Home.py -- --demo
+```
+
 ## Disclaimer
 
 - This is a prototype built for the AI in the Outback Hackathon.
