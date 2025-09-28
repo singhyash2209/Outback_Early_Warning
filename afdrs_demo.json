@@ -1,7 +1,9 @@
 {
   "data": [
     {"district": "Far South Coast", "rating": "High"},
-    {"district": "Monaro Alpine",   "rating": "Moderate"},
-    {"district": "Greater Sydney Region", "rating": "Extreme"}
+    {"district": "Monaro Alpine", "rating": "Moderate"},
+    {"district": "Greater Sydney Region", "rating": "Extreme"},
+    {"district": "North Coast", "rating": "Low"},
+    {"district": "Southern Ranges", "rating": "Catastrophic"}
   ]
 }

@@ -50,16 +50,23 @@ layers = []
 def _apply_point_styles(records, radius_value):
     styled = []
     for r in records:
-        s = (r.get("status") or "").lower()
+        s = (r.get("status") or "").strip().lower()
+        title = (r.get("title") or "").lower()
+
+        # heuristics
         if "out of control" in s:
-            r["color"] = [230, 57, 70]       # red
-        elif "being controlled" in s:
-            r["color"] = [255, 165, 0]       # orange
+            color = [230, 57, 70]          # red
+        elif "being controlled" in s or "contained" in s:
+            color = [255, 165, 0]          # orange
+        elif "burn" in s or "burn" in title:
+            color = [66, 135, 245]         # blue (planned burn / burn activity)
+        elif not s or "no official status" in s or s == "unknown":
+            color = [128, 128, 128]        # grey
         else:
-            r["color"] = [34, 139, 34]       # green
+            color = [34, 139, 34]          # green (advice/other)
+
+        r["color"] = color
         r["radius_m"] = radius_value
-        # Normalize status label
-        r["status"] = r.get("status") or "No official status published"
         styled.append(r)
     return styled
 
@@ -114,7 +121,10 @@ deck = pdk.Deck(
 )
 
 st.pydeck_chart(deck)
-st.caption("Color key: red = Out of control • orange = Being Controlled • green = Other/Advice")
+st.caption(
+    "Color key: red = Out of control • orange = Being controlled/contained • "
+    "blue = Planned burn • green = advice/other • grey = unknown"
+)
 
 # ───────────────────────────────────────────────────────────────────────────────
 # Export incidents (GeoJSON-like)

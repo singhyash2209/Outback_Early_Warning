@@ -7,7 +7,7 @@ def render_sidebar():
     st.sidebar.page_link("pages/1_My_Location.py", label="📍 My Location")
     st.sidebar.page_link("pages/2_Map.py", label="🗺️ Map")
     st.sidebar.page_link("pages/3_Feed.py", label="📰 Feed")
-    st.sidebar.page_link("pages/4_ArcGIS_View.py", label="🧭 ArcGIS View (Silver)")
+    st.sidebar.page_link("pages/4_ArcGIS_View.py", label="🧭 ArcGIS View")
     st.sidebar.page_link("pages/5_Offline_Pack.py", label="📦 Offline Safety Pack")
 
     st.sidebar.divider()

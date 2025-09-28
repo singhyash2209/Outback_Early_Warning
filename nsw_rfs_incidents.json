@@ -1,1 +1,926 @@
-{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Bennetts Rd, Mt Belmore SF", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.8019104000001, -28.852161407999972]}, "properties": {"title": "BRUXNER HWY, MUMMULGUM", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "BULL RD, GLEN ALLEN", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.7441101070001, -29.426918029999968]}, "properties": {"title": "Coal Ridge", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "COCHRANE FIRETRAIL, CARRAI", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [149.00910949700005, -36.10985183699995]}, "properties": {"title": "Dry Plains Road", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [153.1365356450001, -29.727519988999973]}, "properties": {"title": "FIRTH HEINZ RD, PILLAR VALLEY", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "GWYDIR HWY, JACKADGERY", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.75360584300006, -29.108563705999984]}, "properties": {"title": "HICKS RD, BUSBYS FLAT", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [153.23056030200007, -28.513086318999967]}, "properties": {"title": "MOUNT BURRELL NIGHTCAP", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.98725891100003, -29.999900817999958]}, "properties": {"title": "ORARA WAY, KREMNOS", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.53097534100004, -31.438220976999958]}, "properties": {"title": "PIPECLAY RD, PIPECLAY", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [148.94566345300007, -34.38457870499997]}, "properties": {"title": "RUGBY RD, RUGBY", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Scrubby Creek", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "SUGARBAG RD E, TABULAM", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "UPPER MONGOGARIE RD, UPPER MONGOGARIE", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "1860 George Downs Drive", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Ballengarra State Forest", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [151.02943420400004, -34.01086425799997]}, "properties": {"title": "BILLA RD, BANGOR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Blaxland Ridge East HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Cabins HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.97016906700003, -30.24844360299994]}, "properties": {"title": "DAIRYVILLE RD, UPPER ORARA", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Darnley Oval, HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [149.80700683600003, -35.446296691999976]}, "properties": {"title": "DUNCAN ST, BRAIDWOOD", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Eden Fireshed", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Forestry HR - Fox Gully Road", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Highway HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Irragappa HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "KENNY ST, MOUNT VICTORIA", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Lagoon Trail HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Larapinta HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Mellows HR Stage 3", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Minyon Cultural HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [150.95051574700005, -31.08300209099997]}, "properties": {"title": "OXLEY LOOKOUT EAST HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Passionfruit HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Pulfords Road Nundle SF", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [148.528503418, -32.273750304999965]}, "properties": {"title": "RIFLE RANGE RD, DELROY HEIGHTS", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Sansom HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Skillion East HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Stanford HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Stroms HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Woodbury Park HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "Wooglamai HR", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [151.55879211500007, -32.424484252999946]}, "properties": {"title": "ALLYN RIVER RD", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [151.9449462890001, -32.40576171899994]}, "properties": {"title": "BOORAL-WASHPOOL RD, STROUD", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [153.3584442140001, -29.10321807799994]}, "properties": {"title": "BRICKELLA RD, WOODBURN", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [150.70689392100007, -34.16268920899995]}, "properties": {"title": "CARROLLS RD, MENANGLE", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [150.6755981440001, -33.54289626999997]}, "properties": {"title": "COMLEROY RD, KURRAJONG", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [148.23333740300006, -33.167900085999975]}, "properties": {"title": "COOKAMIDGERA RD, PARKES", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [151.90666198700012, -30.565126418999967]}, "properties": {"title": "Hillgrove Recreation Reserve", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [150.57691955500002, -30.231992721999973]}, "properties": {"title": "HORTON RD, COBBADAH", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [145.88038635200007, -34.80868911799996]}, "properties": {"title": "KOOKABURRA AV", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [148.72914123600003, -34.52130126999998]}, "properties": {"title": "LACHLAN VALLEY WAY, BOOROWA", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [151.93890380900007, -32.77301025399993]}, "properties": {"title": "LEMON TREE PASSAGE RD, SALT ASH", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.993423462, -28.45552253699998]}, "properties": {"title": "LYNCHES CREEK RD, LYNCHS CREEK", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [146.97721862800006, -33.641933440999935]}, "properties": {"title": "MACKRELL ST, UNGARIE", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [146.15243530200007, -34.17419052099996]}, "properties": {"title": "MYALL PARK RD, MYALL PARK", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [null, null]}, "properties": {"title": "NORTHVIEW CL, COOLANGATTA", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.74247741700003, -31.51510429399997]}, "properties": {"title": "OLD KING CREEK RD, KING CREEK", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [153.52375793500005, -28.388729095999963]}, "properties": {"title": "PACIFIC HWY, CUDGERA CREEK", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.63148498600003, -31.42863082899993]}, "properties": {"title": "PAPPINBARRA RD, FRAZERS CREEK", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [145.9184074420001, -30.087402227999974]}, "properties": {"title": "PARKDALE RD, BOURKE", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [144.38633728000002, -35.84378814699994]}, "properties": {"title": "Perricoota SF - Toorak Rd", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [150.94534301700003, -34.26885986299993]}, "properties": {"title": "PRINCES HWY, MADDENS PLAINS", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [151.5234069830001, -32.85470962499994]}, "properties": {"title": "RICHMOND VALE RD, RICHMOND VALE", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [153.14184570400005, -28.745195388999946]}, "properties": {"title": "ROCK VALLEY RD, ROCK VALLEY", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.74887085000012, -31.59093284599993]}, "properties": {"title": "ROSENEATH RD, BOBS CREEK", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [153.00337219200003, -28.78369522099996]}, "properties": {"title": "SUMMERLAND WAY, FAIRY HILL", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.48771667500012, -32.12593460099998]}, "properties": {"title": "THE LAKES WAY, DARAWANK", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.4694671630001, -31.45451736499996]}, "properties": {"title": "TOMS CREEK RD, ELLENBOROUGH", "status": "Unknown", "updated": "", "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me", "source": "NSW RFS", "color": [34, 139, 34], "radius_m": 4500}}]}
+{
+  "type": "FeatureCollection",
+  "generated_at_utc": "2025-09-28 07:08:07",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.3949127200001,
+          -29.923685073999934
+        ]
+      },
+      "properties": {
+        "title": "Cobleys Road Fire",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.3766300000001,
+          -35.11686599999996
+        ]
+      },
+      "properties": {
+        "title": "Day St, Wagga Wagga",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.84068298300008,
+          -31.032943725999928
+        ]
+      },
+      "properties": {
+        "title": "EVERINGHAMS LANE, FREDERICKTON",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.1365356450001,
+          -29.727519988999973
+        ]
+      },
+      "properties": {
+        "title": "FIRTH HEINZ RD, PILLAR VALLEY",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.99963951100005,
+          -30.50489229699997
+        ]
+      },
+      "properties": {
+        "title": "NEWRY ISLAND DR, URUNGA NSW",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.60630798300008,
+          -32.907241821999946
+        ]
+      },
+      "properties": {
+        "title": "PALESTHAN RD, EUABALONG",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.92311096100002,
+          -30.084304808999946
+        ]
+      },
+      "properties": {
+        "title": "Parkdale Rd, Bourke",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.5472564700001,
+          -31.435789107999938
+        ]
+      },
+      "properties": {
+        "title": "PIPECLAY RD, PIPECLAY",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.53097534100004,
+          -31.438220976999958
+        ]
+      },
+      "properties": {
+        "title": "PIPECLAY RD, PIPECLAY",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.00088200000005,
+          -30.50640199999998
+        ]
+      },
+      "properties": {
+        "title": "Rosedale Dr, Urunga",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.94566345300007,
+          -34.38457870499997
+        ]
+      },
+      "properties": {
+        "title": "RUGBY RD, RUGBY",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.02943420400004,
+          -34.01086425799997
+        ]
+      },
+      "properties": {
+        "title": "BILLA RD, BANGOR",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.49302673300008,
+          -33.18037414599996
+        ]
+      },
+      "properties": {
+        "title": "DELTA F HR, WYEE",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.23056030200007,
+          -28.513086318999967
+        ]
+      },
+      "properties": {
+        "title": "MOUNT BURRELL NIGHTCAP",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.95051574700005,
+          -31.08300209099997
+        ]
+      },
+      "properties": {
+        "title": "OXLEY LOOKOUT EAST HR",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.528503418,
+          -32.273750304999965
+        ]
+      },
+      "properties": {
+        "title": "RIFLE RANGE RD, DELROY HEIGHTS",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.47395324700005,
+          -34.40296935999993
+        ]
+      },
+      "properties": {
+        "title": "ACACIA ST, COLO VALE",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.9449462890001,
+          -32.40576171899994
+        ]
+      },
+      "properties": {
+        "title": "BOORAL-WASHPOOL RD, STROUD",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.37525940000012,
+          -35.52887344399994
+        ]
+      },
+      "properties": {
+        "title": "BUNDLE HILL RD, BAWLEY POINT",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.42866516100003,
+          -31.56753539999994
+        ]
+      },
+      "properties": {
+        "title": "DUCKS RIDGE RD, COMBOYNE",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.55638837800007,
+          -30.256565055999943
+        ]
+      },
+      "properties": {
+        "title": "FAHEYS AND BULGINS RD, HERNANI",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.60655212400002,
+          -34.006641387999935
+        ]
+      },
+      "properties": {
+        "title": "FALLONS RD, ORANGEVILLE",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.90666198700012,
+          -30.565126418999967
+        ]
+      },
+      "properties": {
+        "title": "Hillgrove Recreation Reserve",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.68125915500002,
+          -29.999179839999954
+        ]
+      },
+      "properties": {
+        "title": "HORTONS CREEK TRL, NYMBOIDA",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.88038635200007,
+          -34.80868911799996
+        ]
+      },
+      "properties": {
+        "title": "KOOKABURRA AV",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          148.72914123600003,
+          -34.52130126999998
+        ]
+      },
+      "properties": {
+        "title": "LACHLAN VALLEY WAY, BOOROWA",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          147.63813781700003,
+          -33.36358261099997
+        ]
+      },
+      "properties": {
+        "title": "LACHLAN VALLEY WAY, WARROO",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.93890380900007,
+          -32.77301025399993
+        ]
+      },
+      "properties": {
+        "title": "LEMON TREE PASSAGE RD, SALT ASH",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.6768798820001,
+          -29.389820097999973
+        ]
+      },
+      "properties": {
+        "title": "LLEWELLYN RD, FINE FLOWER",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.993423462,
+          -28.45552253699998
+        ]
+      },
+      "properties": {
+        "title": "LYNCHES CREEK RD, LYNCHS CREEK",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.97721862800006,
+          -33.641933440999935
+        ]
+      },
+      "properties": {
+        "title": "MACKRELL ST, UNGARIE",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          145.95153808600003,
+          -30.05084991399997
+        ]
+      },
+      "properties": {
+        "title": "MACQUARIE ST, NORTH BOURKE",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          146.09828186000004,
+          -34.25701141299993
+        ]
+      },
+      "properties": {
+        "title": "NOBLE ST, BEELBANGERA",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.74247741700003,
+          -31.51510429399997
+        ]
+      },
+      "properties": {
+        "title": "OLD KING CREEK RD, KING CREEK",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.32014465300006,
+          -34.54247283899997
+        ]
+      },
+      "properties": {
+        "title": "OLDBURY RD, SUTTON FOREST",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.8987426760001,
+          -30.77137756299993
+        ]
+      },
+      "properties": {
+        "title": "PACIFIC HWY, WARRELL CREEK",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.38633728000002,
+          -35.84378814699994
+        ]
+      },
+      "properties": {
+        "title": "Perricoota SF - Toorak Rd",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.00337219200003,
+          -28.78369522099996
+        ]
+      },
+      "properties": {
+        "title": "SUMMERLAND WAY, FAIRY HILL",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.48771667500012,
+          -32.12593460099998
+        ]
+      },
+      "properties": {
+        "title": "THE LAKES WAY, DARAWANK",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.9885864260001,
+          -29.407873153999958
+        ]
+      },
+      "properties": {
+        "title": "THE SUMMERLAND WAY, BANYABBA",
+        "status": "No official status published",
+        "updated": "",
+        "url": "https://www.rfs.nsw.gov.au/fire-information/fires-near-me",
+        "source": "NSW RFS",
+        "color": [
+          128,
+          128,
+          128
+        ],
+        "radius": 5000
+      }
+    }
+  ]
+}
