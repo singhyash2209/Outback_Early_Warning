@@ -2,7 +2,7 @@
 
 A one-stop, NSW-first dashboard that unifies **official bushfire, weather, and AFDRS feeds** into a simple, fast UI — with **offline-ready safety tools** and **ArcGIS export**.
 
-**Demo video:** [Watch on Vimeo](https://vimeo.com/1122588844?share=copy)  
+**Demo video:** [Watch on Youtube](https://youtu.be/CYK1DZcK1wc)  
 **Live app:** [outback-early-warning.streamlit.app](https://outback-early-warning.streamlit.app)  
 **Repository:** [GitHub](https://github.com/singhyash2209/Outback_Early_Warning)
 
@@ -99,43 +99,24 @@ Open http://localhost:8501 in your browser.
 
 ## Project Structure
 .
-
 ├── Home.py
-
 ├── pages/
-
 │   ├── 1_My_Location.py
-
 │   ├── 2_Map.py
-
 │   ├── 3_Feed.py
-
 │   ├── 4_ArcGIS_View.py
-
 │   └── 5_Offline_Pack.py
-
 ├── src/
-
 │   ├── fetch_rfs_nsw.py
-
 │   ├── fetch_bom.py
-
 │   ├── afdrs.py
-
 │   ├── fetch_firms.py
-
 │   ├── geo_utils.py
-
 │   ├── risk_model.py
-
 │   ├── utils_cache.py
-
 │   └── sidebar.py
-
 ├── assets/               # screenshots
-
 ├── requirements.txt
-
 └── .streamlit/config.toml
 
 ---
