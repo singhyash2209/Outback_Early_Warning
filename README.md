@@ -97,30 +97,6 @@ Open http://localhost:8501 in your browser.
 
 ---
 
-## Project Structure
-.
-├── Home.py
-├── pages/
-│   ├── 1_My_Location.py
-│   ├── 2_Map.py
-│   ├── 3_Feed.py
-│   ├── 4_ArcGIS_View.py
-│   └── 5_Offline_Pack.py
-├── src/
-│   ├── fetch_rfs_nsw.py
-│   ├── fetch_bom.py
-│   ├── afdrs.py
-│   ├── fetch_firms.py
-│   ├── geo_utils.py
-│   ├── risk_model.py
-│   ├── utils_cache.py
-│   └── sidebar.py
-├── assets/               # screenshots
-├── requirements.txt
-└── .streamlit/config.toml
-
----
-
 ## Team
 
 - Yash Singh - Core Streamlit app, data integrations (RFS/BOM/AFDRS), map, feed, export, repo.
